@@ -8,7 +8,7 @@
  
  //make one query for all data in last 2 minute
  //http://stackoverflow.com/questions/4961524/mysql-query-latest-timestamp-unique-value-from-the-last-30-minutes
- $level_query="SELECT device AS d, created_at AS createdtime, measurement_reading AS measurement FROM usb1608g WHERE created_at > (now() - interval 120 second)";
+ $level_query="SELECT device AS d, created_at AS createdtime, measurement_reading AS measurement FROM usb1608g WHERE created_at > (now() - interval 1200 second)";
 
 
  //not getting anything back?  try running this
