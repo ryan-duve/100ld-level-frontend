@@ -71,7 +71,7 @@
 					yaxis: {},
 					xaxis: { mode: "time",
 						timeformat:"%h:%M:%S",
-						min: Date.now()-10000*1000-18000*1000,//120 seconds * 1000 milliseconds/second
+						min: Date.now()-2400*1000-18000*1000,//120 seconds * 1000 milliseconds/second
 						max: Date.now()-18000*1000//subtract 18000 seconds for GMT->EST time zone
 					},
 					"lines": {"show": "true"},
@@ -80,25 +80,6 @@
 				});
 
 
-
-
-
-
-
-
-
-
-//				$.plot($("#placeholder"), data, {
-//					yaxis: {},
-//					xaxis: { mode: "time",
-//						timeformat:"%h:%M:%S",
-//						min: Date.now()-120*1000-18000*1000,//120 seconds * 1000 milliseconds/second
-//						max: Date.now()-18000*1000//subtract 18000 seconds for GMT->EST time zone
-//					},
-//					"lines": {"show": "true"},
-//					"points": {"show": "true"},
-//					"legend":{"position":"nw"}
-//				});
 			}
 
 			$.ajax({
@@ -108,10 +89,10 @@
 				success: onDataReceived
 			});
 
-			setTimeout(fetchData, 5000);
+			setTimeout(fetchData, 2000);
 		}
 
-		setTimeout(fetchData, 5000);
+		setTimeout(fetchData, 2000);
 	});//end onPageLoad
 
 	</script>
