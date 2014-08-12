@@ -70,9 +70,10 @@
 				$.plot($("#placeholder"), data, {
 					yaxis: {},
 					xaxis: { mode: "time",
+						timezone:"browser",
 						timeformat:"%h:%M:%S",
-						min: Date.now()-2400*1000-18000*1000,//120 seconds * 1000 milliseconds/second
-						max: Date.now()-18000*1000//subtract 18000 seconds for GMT->EST time zone
+						min: Date.now()-2400*1000,//120 seconds * 1000 milliseconds/second
+						max: Date.now()
 					},
 					"lines": {"show": "true"},
 					"points": {"show": "true"},
